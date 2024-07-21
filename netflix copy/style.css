@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner-wrap {
+    background-image: url("./assets/bgimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    border-bottom: 10px solid #222222;
+    position: relative;
+}
+
+.overlay {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 60%;
+}
+
+.card-title {
+    font-size: 3.125rem;
+    margin: 0.5rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.card-subtitle {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.email-form-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.2rem;
+
+}
+
+.navbar {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    margin: 0px 45px;
+    padding: 45px;
+}
+
+.navbar>img {
+    height: 70px;
+    width: 140px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.navbar>a {
+    padding: 7px 17px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.banner-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+}
+/* .banner-container button svg{
+    margin-top: 10px;
+} */
+
+.get-started-form {
+    height: 60px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.get-started-form input {
+    height: 100%;
+    width: 450px;
+    padding-left: 10px;
+    opacity: 60%;
+    padding-left: 10px;
+}
+
+.get-started-form button {
+    background: red;
+    color: white;
+    height: 100%;
+    font-size: 1.625rem;
+    border: none;
+    min-height: 60px;
+    padding: 0 26px;
+    border-left: 1px solid;
+}
+
+.info-container {
+    background: black;
+    color: white;
+    display: flex;
+    padding: 70px 45px;
+    border-bottom: 10px solid #222222;
+}
+
+
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tv-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tv-container img {
+    z-index: 1;
+}
+
+.tv-container video {
+    position: absolute;
+}
+.fourth-page {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 70px 45px; /* Same padding as other sections */
+    border-bottom: 10px solid #222222;
+    text-align: center; /* Center text alignment */
+}
+
+.fourth-page h2 {
+    margin-right: 50%;
+    font-size: 3.125rem; /* Matching the card-title size */
+    font-weight: 600;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.fourth-page p {
+    margin-right: 50%;
+    font-size: 1.625rem; /* Matching the card-subtitle size */
+    font-weight: 400;
+    line-height: 1.5;
+}
+.fith-page {
+    color: rgba(255, 255, 255, 0.897);
+    background-color:black;
+    display: flex;
+     /* Same padding as other sections */
+    border-bottom: 10px solid #222222;
+    
+}
+
+.fith-page h2 {
+    font-size: 3.125rem; /* Matching the card-title size */
+    font-weight: 600;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.fith-page p {
+    font-size: 1.625rem; /* Matching the card-subtitle size */
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.fith-page img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+.iff{
+    margin-top: 10%;
+}
+/* Styles for the sixth-page section */
+.sixth-page {
+    background-color: black;
+    padding: 70px 45px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures it fills the viewport height */
+}
+
+.sixth-page h2 {
+    color: white;
+    
+    font-size: 3.125rem; /* Large heading size */
+    font-weight: 600; /* Bold heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.solution-space {
+    width: 100%;
+    max-width: 800px; /* Maximum width for centered content */
+    margin: 0 auto; /* Centering the content */
+}
+
+.solution-space ul {
+    list-style: none; /* Removing default list styling */
+    padding: 0; /* Removing default padding */
+    margin: 0; /* Removing default margin */
+    width: 100%; /* Full width of the container */
+}
+
+.solution-space li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.solution-space button {
+    background: #333; /* Dark background color */
+    color: white; /* White text color */
+    border: none; /* Removing default border */
+    width: 100%; /* Full width button */
+    padding: 20px; /* Padding inside the button */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between text and icon */
+    align-items: center; /* Center items vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.25rem; /* Large font size */
+}
+
+
+
+.footer {
+    background: black;
+
+}
+
+.footer-items {
+    margin: 0 47.5px;
+    padding: 70px 45px;
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+.footer ul li,
+.questions-title {
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.footer ul li:hover {
+
+    cursor: pointer;
+}
+.footer ul li{
+    text-decoration: underline;
+}
+.questions-title:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    list-style-type: none;
+    columns: 4;
+    padding: 0;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.language {
+    height: 53px;
+    width: 142px;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #999999;
+    padding: 0 10px;
+    margin: 30px 0 0 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+}
+
+.language select {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    appearance: none;
+    background: black;
+    color: #999999;
+    background: url(./assets/caret.png) no-repeat 100%;
+
+}
+
+.ned {
+    margin-top: 10px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
